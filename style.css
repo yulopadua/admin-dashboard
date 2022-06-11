@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
 
@@ -41,9 +43,10 @@ nav {
 
 header {
     background-color: #fff7ed;
+    padding: 10px 40px;
     display: grid;
     gap: 20px;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 main {
@@ -67,3 +70,103 @@ nav a img {
 }
 
 /* nav */
+
+/* header */
+
+.dp-big {
+    height: 60px;
+    width: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.dp-small {
+    height: 48px;
+    width: 48px;
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.search > input {
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #fdba74;
+}
+
+.search-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.search-right .bell {
+    justify-self: end;
+}
+
+.search-right p {
+    justify-self: start;
+    font-weight: bold;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile p {
+    font-weight: bold;
+    line-height: 0.3rem;
+}
+
+.profile .greeting {
+    font-size: 0.8rem;
+}
+
+.profile .name {
+    font-size: 1.2rem;
+}
+
+.profile-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    gap: 10px;
+}
+
+.profile-buttons button {
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #fb923c;
+    font-weight: bold;
+}
+
+/* header */
