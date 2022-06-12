@@ -6,7 +6,7 @@
     font-weight: normal;
 }
 
-ul {
+ul, p {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,7 +43,7 @@ nav {
 
 header {
     background-color: #fff7ed;
-    padding: 10px 40px;
+    padding: 10px 40px 15px 40px;
     display: grid;
     gap: 20px;
     grid-template-rows: 1fr 1fr;
@@ -51,6 +51,11 @@ header {
 
 main {
     background-color: #fdba74;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 20px;
+    padding-bottom: 40px;
 }
 
 /* nav */
@@ -152,6 +157,11 @@ nav a img {
     font-size: 1.2rem;
 }
 
+.profile div {
+    display: grid;
+    gap: 20px;
+}
+
 .profile-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -170,3 +180,103 @@ nav a img {
 }
 
 /* header */
+
+/* main */
+
+.card-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background-color: #fff7ed;
+    border-radius: 8px;
+    border-left: solid 8px #7c2d12;
+    padding: 20px 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 150px 24px;
+}
+
+.card .title {
+    font-weight: bold;
+}
+
+.card .description {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.card .options {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: repeat(3, 24px);
+    gap: 20px;
+}
+
+.main-left > p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.main-right > p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.main-right {
+    padding: 0 20px;
+}
+
+.announcements {
+    background-color: #fff7ed;
+    border-radius: 8px;
+    padding: 10px;
+    display: grid;
+}
+
+.announcements div {
+    padding: 10px;
+}
+
+.announcements .title {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.announcements .description {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.trending {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff7ed;
+    display: grid;
+    gap: 20px;
+}
+
+.trending .name{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 20px;
+}
+
+.trending img {
+    height: 48px;
+    width: 48px;
+}
+
+.name .desc {
+    color: gray;;
+}
+
+/* main */
